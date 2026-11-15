@@ -1,6 +1,6 @@
 # Coffee brew guide
 
-A small site for choosing a coffee and following step-by-step instructions to make it on our machine. Built with the [Cool Graphs](https://github.com/CristinaDesign/vegetablecharts) design system.
+A small site for choosing a coffee and following step-by-step instructions to make it on our machine. Built with the [Cool Graphs](https://github.com/CristinaDesign/cool-graphs) design system.
 
 | What | Where |
 |---|---|
