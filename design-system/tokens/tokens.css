@@ -1,0 +1,45 @@
+/* Cool Graphs design tokens. Three layers, each pointing at the one before:
+     1. primitives.css  the raw palette (brown-700, lime-500 ...), no meaning
+     2. semantic.css    roles (ink, panel, accent, error ...), light and dark
+     3. component.css   colours for one component (table, banner, card, button)
+   Non-colour tokens (type, shape, spacing, motion) live below. */
+@import './primitives.css';
+@import './semantic.css';
+@import './component.css';
+
+:root {
+  /* Typography */
+  --cg-font-display: "Alegreya Sans", "Trebuchet MS", system-ui, sans-serif;
+  --cg-font-data: "Alegreya", Georgia, "Times New Roman", serif;
+  --cg-text-sm: 14px;
+  --cg-text-md: 16px;
+  --cg-text-lg: 18px;
+  --cg-text-xl: 20px;
+  --cg-text-title: 24px;
+
+  /* Shape, spacing, motion */
+  --cg-radius-sm: 8px;
+  --cg-radius-lg: 16px;
+  --cg-radius-pill: 999px;
+  --cg-border-width: 2px;
+  --cg-target-min: 30px;        /* minimum height/width of anything clickable */
+  --cg-icon-size: 24px;         /* default icon size */
+  --cg-space-1: 4px;
+  --cg-space-2: 8px;
+  --cg-space-3: 12px;
+  --cg-space-4: 16px;
+  --cg-space-5: 24px;
+  --cg-space-6: 40px;
+  --cg-shadow-raised: 0 6px 18px var(--cg-shadow-color);
+  --cg-focus-ring: 3px solid var(--cg-color-accent);
+  --cg-duration: .25s;
+  --cg-ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+body {
+  background: var(--cg-color-bg);
+  color: var(--cg-color-ink);
+  font: var(--cg-text-md)/1.5 var(--cg-font-display);
+  transition: background-color var(--cg-duration), color var(--cg-duration);
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
