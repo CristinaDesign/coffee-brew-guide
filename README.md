@@ -4,9 +4,10 @@ A small site for choosing a coffee and following step-by-step instructions to ma
 
 | What | Where |
 |---|---|
+| The site itself (open this file) | `index.html` |
 | This site's design rules | `DESIGN-NOTES.md` |
 | The coffee settings (from the whiteboard) | `data/coffee-settings.csv` |
 | Design system copy (do not edit here) | `design-system/` |
 | The designer's illustrations | `illustrations/` |
 
-Status: set up. The site itself is not built yet.
+Status: the site is built (`index.html`, one self-contained file). It is published with GitHub Pages, which shows `index.html` as the website: Settings > Pages > Deploy from a branch > `main` / root.
